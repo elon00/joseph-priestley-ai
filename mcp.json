@@ -1,0 +1,54 @@
+{
+  "mcpServers": {
+    "joseph-priestley-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "TITAN_PROTOCOL": "PRIESTLEY",
+        "TARGET_CHAIN": "Sui",
+        "FIPS_203_LEVEL": "ML-KEM-768",
+        "FIPS_204_LEVEL": "ML-DSA-65"
+      },
+      "tools": [
+        {
+          "name": "isolate_pure_oxygen_gas",
+          "description": "Models solar thermal decomposition of red mercuric oxide generating dephlogisticated gas supporting respiration",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "mercuric_oxide_mass_g": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "mercuric_oxide_mass_g"
+            ]
+          }
+        },
+        {
+          "name": "simulate_plant_photosynthetic_regeneration",
+          "description": "Computes oxygen restoration rate of air fouled by animal respiration using sprig of mint in bell jar",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "plant_biomass_g": {
+                "type": "number"
+              },
+              "light_lux": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "plant_biomass_g"
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
